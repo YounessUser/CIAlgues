@@ -1,6 +1,40 @@
 <?php require_once('../../../private/initialize.php'); ?> 
 
 
+<?php 
+if(is_post_request()){
+    
+$mailfrom = $_POST['email'];
+    $mailSub = $_POST['subject'];
+    $mailMsg = $_POST['message'];
+    $mailerName = $_POST['name'];
+   $mail = new PHPMailer(); // create a new object
+$mail->IsSMTP(); // enable SMTP
+$mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 465; // or 587
+$mail->IsHTML(true);
+$mail->Username = E_MAIL;
+$mail->Password = PASSWORD_MAIL;
+#$mail->From= $mailfrom;
+#$mail->FromName=$mailerName;
+$mail->setFrom($mailfrom,"{$mailerName} <{$mailfrom}>");
+#$mail->setFrom($mailfrom,$mailfrom);
+$mail->Subject = $mailSub;
+$mail->Body = $mailMsg;
+$mail->Timeout = 1000;
+$mail->SMTPAutoTLS = TRUE;
+$mail->AddAddress(E_MAIL);
+#$mail->AddAddress("melato@tinoza.org");
+   
+   if(!$mail->Send())
+   {
+       echo "Mail Not Sent".$mail->ErrorInfo;
+   }
+}
+?>
 <?php include(SHARED_PATH . '/Header.php'); ?>
 
 <div class="section">
@@ -47,10 +81,10 @@
                         </div>
                         <div class="agileinfo-contact-form-grid">
                             <form action="#" method="post">
-                                <input type="text" name="Name" placeholder="Name" required="">
-                                <input type="text" name="Subject" placeholder="Subject" required="">
-                                <input type="email" name="Email" placeholder="Email" required="">
-                                <textarea name="Message" placeholder="Message" required=""></textarea>
+                                <input type="text" name="name" placeholder="Name" required="">
+                                <input type="text" name="subject" placeholder="Subject" required="">
+                                <input type="email" name="email" placeholder="Email" required="">
+                                <textarea name="message" placeholder="Message" required=""></textarea>
                                 <button class="btn1">Submit</button>
                             </form>
                         </div>

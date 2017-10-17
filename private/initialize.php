@@ -23,6 +23,10 @@ define("PROJECT_PATH", dirname(PRIVATE_PATH));
 define("PUBLIC_PATH", PROJECT_PATH.'/public');
 define("SHARED_PATH", PRIVATE_PATH.'/shared');
 define("UTIL_PATH", PRIVATE_PATH.'/util');
+define("MAIL_UTIL_PATH", PRIVATE_PATH.'/mail_util');
+
+define("E_MAIL", "congretesttesttest@gmail.com");
+define("PASSWORD_MAIL", "##congre##");
 
 // Assign the root URL to a PHP constant
 // * Do not need to include the domain
@@ -46,6 +50,7 @@ require_once('services/commite_services.php');
 require_once('services/users_services.php');
 require_once('services/inscription_services.php');
 require_once('util/doc_reader_util.php');
+require_once('mail_util/PHPMailerAutoload.php');
 
 $db = db_connect();
 
