@@ -41,7 +41,7 @@ $mail->AddAddress(E_MAIL);
     <div class="pageContent">
         <!-- contact -->
         <div class="contact" id="contact">
-                <h3 class="w3ls-title">Get in touch</h3>
+                <h3 class="w3ls-title"><?=$contact_contenu[0];?></h3>
                 <div class="agile-contact-form">
                     <div class="col-md-4 contact-form-left">
                         <div class="w3layouts-contact-form-top">
@@ -77,14 +77,14 @@ $mail->AddAddress(E_MAIL);
                     </div>
                     <div class="col-md-8 contact-form-right">
                         <div class="contact-form-top">
-                            <h3>Send us a message</h3>
+                            <h3><?=$contact_contenu[1];?></h3>
                         </div>
                         <div class="agileinfo-contact-form-grid">
                             <form action="#" method="post">
-                                <input type="text" name="name" placeholder="Name" required="">
-                                <input type="text" name="subject" placeholder="Subject" required="">
-                                <input type="email" name="email" placeholder="Email" required="">
-                                <textarea name="message" placeholder="Message" required=""></textarea>
+                                <input type="text" name="name" placeholder="<?=$contact_contenu[2];?>" required="">
+                                <input type="text" name="subject" placeholder="<?=$contact_contenu[3];?>" required="">
+                                <input type="email" name="email" placeholder="<?=$contact_contenu[4];?>" required="">
+                                <textarea name="message" placeholder="<?=$contact_contenu[5];?>" required=""></textarea>
                                 <button class="btn1">Submit</button>
                             </form>
                         </div>

@@ -1,10 +1,10 @@
-<select name="country" class="form-control selectForm">
+<select id="country" name="country" class="form-control selectForm">
 <?php
 if(isset($getcommite['country'])){
     echo "<option value=\"{$getcommite['country']}\">{$getcommite['country']}</option>";
     // $getcommite['country'] = '';
 }else{
-    echo "<option value=\"\">Pays...</option>" ;
+    echo "<option value=\"\">-- SELECT --</option>" ;
 }
 ?>
 <option value="Afganistan">Afghanistan</option>

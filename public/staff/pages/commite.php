@@ -22,7 +22,7 @@ $commite_set = find_all_commite();
 
                     <center>
                         <div class=" boxGreen">
-                            <p>COMITE SCIENTIFIQUE </p>
+                            <p><?= $comite_contenu[0];?></p>
                         </div>
                     </center>
 
@@ -32,7 +32,7 @@ $commite_set = find_all_commite();
                     <hr />
                     <center>
                         <div class=" boxGreen">
-                            <p>COMITE D’ORGANISATION</p>
+                            <p><?= $comite_contenu[1];?></p>
                         </div>
                     </center>
                     <br>
