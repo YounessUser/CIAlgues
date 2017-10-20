@@ -2285,6 +2285,11 @@ button.close {
         width: 80% !important;
        
     }
+    .services-grid-left {
+        width: 100%!important;
+        padding: 1em!important;
+        margin: 12px 0!important;
+    }
 
 }
 
@@ -2850,7 +2855,7 @@ button.close {
 }
 .logoLeft{
     width: 20%;
-    margin-right: 25%;
+    margin-right: 20%;
     
 }
 
