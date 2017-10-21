@@ -33,10 +33,11 @@ function find_all_articles() {
     global $db;
 
     $sql = "INSERT INTO article ";
-    $sql .= "(ar_title, ar_path, ar_text) ";
+    $sql .= "(ar_title, ar_path,author, ar_text) ";
     $sql .= "VALUES (";
     $sql .= "'" . db_escape($db,$article['ar_title']) . "',";
     $sql .= "'" . db_escape($db,$article['ar_path']) . "',";
+    $sql .= "'" . db_escape($db,$article['author']) . "',";
     $sql .= "'" . db_escape($db,$article['ar_text']) . "'";
     $sql .= ")";
     $result = mysqli_query($db, $sql);
@@ -57,6 +58,7 @@ function find_all_articles() {
     $sql = "UPDATE article SET ";
     $sql .= "ar_title='" . db_escape($db,$article['ar_title']) . "', ";
     $sql .= "ar_path='" . db_escape($db,$article['ar_path']) . "', ";
+    $sql .= "author='" . db_escape($db,$article['author']) . "', ";
     $sql .= "ar_text='" . db_escape($db,$article['ar_text']) . "' ";
     $sql .= "WHERE id='" . db_escape($db,$article['id']) . "' ";
     $sql .= "LIMIT 1";

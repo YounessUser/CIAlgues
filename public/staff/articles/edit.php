@@ -19,6 +19,7 @@ if(is_post_request()) {
       if(isset($_POST['ar_title']) && isset($_POST['ar_text'])){
   $subject['ar_title'] = strval($_POST['ar_title']);
   $subject['ar_text'] = strval($_POST['ar_text']);
+  $subject['author'] = $_SESSION['username'] ?? '';
   $result = update_article($subject);
       }
   redirect_to(url_for('/staff/articles/show.php?id=' . $id));
