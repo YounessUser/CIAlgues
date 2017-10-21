@@ -64,19 +64,38 @@ CREATE TABLE `commite` (
 --
 
 INSERT INTO `commite` (`id`, `nom`, `country`, `university`, `type`) VALUES
-(1, 'Ahmad Said', 'Maroc', 'University Cadi Ayyad', 2),
-(2, 'Ahmad Ahmad', 'Maroc', 'University Cadi Ayyad', 2),
-(3, 'Oussama Belkass', 'Tunis', 'University of Tunis', 2),
-(4, 'K.Bendiab', 'Maroc', 'University of Maroc', 2),
-(5, 'H.Amraoui', 'Maroc', 'FSTG', 1),
-(6, 'F.Benkhalti', 'Maroc', 'FSTG', 1),
-(7, 'D.Hsissou', 'Maroc', 'FSTG', 1),
-(8, 'N.Zehhar', 'Maroc', 'FSTG', 1),
-(9, 'R.Nmila ', 'Maroc', 'FSTG', 1),
-(10, 'D.Hsissou', 'Maroc', 'University Cadi Ayyad', 2),
-(11, 'F.Benkhalti', 'Maroc', 'University Cadi Ayyad', 2),
-(12, 'A.Alaoui', 'Maroc', 'Abdelmaled Essaidi', 2),
-(14, 'Mamakoda Mamakoda', 'Afganistan', 'Holulu Universite', 2);
+(13, 'F.Benkhalti', 'Maroc', '', 2),
+(12, 'A.Rochdi', 'Maroc', '', 2),
+(11, 'D.Hsissou', 'Maroc', '', 2),
+(10, 'A.Benharref', 'Maroc', '', 2),
+(9, 'A.Reani', 'Maroc', '', 2),
+(8, 'C.Girard', 'France', '', 2),
+(7, 'K.Bendiab', 'Maroc', '', 2),
+(6, 'K.Makroum', 'Maroc', '', 2),
+(5, 'C.D.Gadhi', 'Maroc', '', 2),
+(4, 'H.Amraoui', 'Maroc', '', 2),
+(3, 'M.Loudiki', 'Maroc', '', 2),
+(2, 'M.Faize', 'Maroc', '', 2),
+(1, 'A.Aboudia', 'Maroc', '', 2),
+(14, 'R.Jalal', 'Maroc', '', 2),
+(15, 'B.Sabour', 'Maroc', '', 2),
+(16, 'H.Bouamama', 'Maroc', '', 2),
+(17, 'E.M.Kabil', 'Maroc', '', 2),
+(18, 'N.Seddiqi', 'Maroc', '', 2),
+(19, 'H.Boussetta', 'Tunisie', '', 2),
+(20, 'T.Koussa', 'Maroc', '', 2),
+(21, 'N.Zehhar', 'Maroc', '', 2),
+(22, 'M.El Kaoua', 'Maroc', '', 2),
+(24, 'L.Zidane', 'Maroc', '', 2),
+(25, 'H.Amraoui', 'Maroc', 'FSTG', 1),
+(26, 'F.Benkhalti', 'Maroc', 'FSTG', 1),
+(27, 'H.Bouamama', 'Maroc', 'FSTG', 1),
+(28, 'M.El Kaoua', 'Maroc', 'FSTG', 1),
+(29, 'D.Hsissou', 'Maroc', 'FSTG', 1),
+(30, 'R.Nmila', 'Maroc', 'FSE', 1),
+(31, 'H.Rchid', 'Maroc', 'FSE', 1),
+(32, 'N.Seddiqi', 'Maroc', 'FSTG', 1),
+(33, 'N.Zehhar', 'Maroc', 'FSTG', 1);
 
 -- --------------------------------------------------------
 
@@ -118,7 +137,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `hashed_password`, `quest`, `resp`) VALUES
 (11, 'admin3', '$2y$10$L2WxvctWcPenr/bn.IqqEOVvaNVmJ2qGcEMqKqrPGLPcMTNANtAry', 'Combien des heures vous dormez ?', '8h'),
-(2, 'admin', '$2y$10$QdOkA3I8It8lguvXbe3PxOgf4SSIYaDqZpmMHuLrVWIUozGlE0SXa', 'Quelle votre ami d\'enfance?', 'moi'),
+(2, 'admin', '$2y$10$QdOkA3I8It8lguvXbe3PxOgf4SSIYaDqZpmMHuLrVWIUozGlE0SXa', 'Quelle votre ami d`enfance?', 'moi'),
 (10, 'admin 2', '$2y$10$LHSwCEWHTxG1.GyaNNgH9eNe0D1W9lJU6U2tfn9WFz1VV22vSVyPG', 'A quelle annee vous avez votre premier telephone ?', 'test reponse');
 
 --
