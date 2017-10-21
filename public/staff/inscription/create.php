@@ -26,6 +26,7 @@ if (is_post_request()) {
             $inscription['gender'] = $gender;
             $inscription['address'] = $address;
             $inscription['type'] = $type;
+            $inscription['price'] = inscription_price($type);
             $inscription['titre'] = $titre;
             $inscription['theme'] = $theme;
             $inscription['country'] = $country;
