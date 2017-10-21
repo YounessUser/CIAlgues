@@ -6,30 +6,30 @@
 <div class="section">
     <div class="pageContent">
 
-        <h1 class="presentationTitle"><b>Frais d'Inscription</b></h1>
+        <h1 class="presentationTitle"><b><?=$frais_title;?></b></h1>
         <div class="table-condensed">
             <table class="table table-striped table-bordered sizeText">
                 <thead>
                     <tr>
                         <td></td>
-                        <td style="color: red;">Avant le 20/02/2016</td>
-                        <td style="color: red;">Après le 20/02/2016</td>
+                        <td style="color: red;"><?= $frais_contenu[0];?> 20/02/2016</td>
+                        <td style="color: red;"><?= $frais_contenu[1];?> 20/02/2016</td>
                     </tr>
                 </thead>
                 <tbody>
 
                     <tr>
-                        <td>Enseignant-chercheurs :</td>
+                        <td><?= $frais_contenu[2];?> :</td>
                         <td>200 euros</td>
                         <td>250 euros</td>
                     </tr>
                     <tr>
-                        <td>Etudiants :</td>
+                        <td><?= $frais_contenu[3];?> :</td>
                         <td>100 euros</td>
                         <td>120 euros</td>
                     </tr>
                     <tr>
-                        <td>Accompagnateurs :</td>
+                        <td><?= $frais_contenu[4];?> :</td>
                         <td>100 euros</td>
                         <td>120 euros</td>
                     </tr>

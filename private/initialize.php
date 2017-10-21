@@ -2,9 +2,9 @@
 
 ob_start(); // output buffering is turned on
 
-  session_start(); // turn on sessions
+session_start(); // turn on sessions
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -18,12 +18,12 @@ require_once('functions.php');
 // __FILE__ returns the current path to this file
 //dirname() returns the path to the parent diractory
 
-define("PRIVATE_PATH",dirname(__FILE__));
+define("PRIVATE_PATH", dirname(__FILE__));
 define("PROJECT_PATH", dirname(PRIVATE_PATH));
-define("PUBLIC_PATH", PROJECT_PATH.'/public');
-define("SHARED_PATH", PRIVATE_PATH.'/shared');
-define("UTIL_PATH", PRIVATE_PATH.'/util');
-define("MAIL_UTIL_PATH", PRIVATE_PATH.'/mail_util');
+define("PUBLIC_PATH", PROJECT_PATH . '/public');
+define("SHARED_PATH", PRIVATE_PATH . '/shared');
+define("UTIL_PATH", PRIVATE_PATH . '/util');
+define("MAIL_UTIL_PATH", PRIVATE_PATH . '/mail_util');
 
 define("E_MAIL", "congretesttesttest@gmail.com");
 define("PASSWORD_MAIL", "##congre##");
@@ -52,8 +52,13 @@ require_once('services/inscription_services.php');
 require_once('util/doc_reader_util.php');
 require_once('mail_util/PHPMailerAutoload.php');
 
+$langUrl='langs/fr.php';
+if (isset($_GET['lang']) && $_GET['lang'] == 'En') {
+    $langUrl='langs/en.php';
+} 
+require_once $langUrl;
+
 $db = db_connect();
 
 $errors = [];
-
 ?>

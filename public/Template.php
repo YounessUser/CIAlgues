@@ -11,10 +11,10 @@
             <div class="agileits-banner-info">
 <!--                <h3><span class="bgGreen">CIAlgues-2018</span></h3>-->
                 <img src="stylesheets/img/logoCIAlgues.png" class="logoCIAlgues" alt="CIAlgues" >
-                <p>2ème CONGRES INTERNATIONAL SUR LES ALGUES 
+                <p><?= $accueil_contenu[0];?>
 
                     <br>
-                    <span class="dateImportant">Du 22 au 24 Mars 2018, Marrakech, Maroc</span>
+                    <span class="dateImportant"><?= $accueil_contenu[1];?></span>
 
 
                 </p>

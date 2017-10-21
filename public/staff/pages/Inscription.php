@@ -7,7 +7,7 @@
     <div class="pageContent">
 
 
-        <h1 class="presentationTitle"><b>Formulaire d'inscription</b></h1>
+        <h1 class="presentationTitle"><b><?= $inscription_title;?></b></h1>
         <!--<a class="back-link" href="<?php // echo url_for('/staff/commite/index.php'); ?>">&laquo; Revenir vers la list</a>-->
         <h1></h1>
         <div style="padding-top: 2%;">
@@ -16,12 +16,15 @@
 
 
                 <!--Saisir le nom -->
-                <input type="text" maxlength="20" placeholder="Nom" name="lastname" required>
+                <label class="labelClass" for="nom"><?= $inscription_contenu[0];?></label>
+                <input id="nom" type="text" maxlength="20" placeholder="<?= $inscription_contenu[0];?>" name="lastname" required>
                 <!--Saisir le Prenom -->
-                <input type="text" maxlength="20" placeholder="Prenom" name="firstname" required>
+                <label class="labelClass" for="prenom"><?= $inscription_contenu[1];?></label>
+                <input id="prenom" type="text" maxlength="20" placeholder="<?= $inscription_contenu[1];?>" name="firstname" required>
 
 
                 <div style="padding:8px 0;">
+                    <label class="labelClass" for="commu"><?= $inscription_contenu[2];?></label>
                     <select id="commu" class="form-control selectForm" name="commu" required>
                         <option value="" selected="">Communication</option> 
                         <option value="Orale" >Orale</option> 
@@ -32,6 +35,7 @@
 
                 <!--Saisir l theme -->
                 <div style="padding:8px 0;">
+                    <label class="labelClass" for="theme"><?= $inscription_contenu[3];?></label>
                     <select id="theme" class="form-control selectForm" name="theme" required>
                         <option value="" selected="">Thème</option> 
                         <option value="1" >Algues et biodiversité</option> 
@@ -45,21 +49,26 @@
                 </div>
 
                 <!--Saisir l titre -->
-                <input type="text" maxlength="40" placeholder="Titre" name="titre" required>
+                <label class="labelClass" for="titre"><?= $inscription_contenu[4];?> :</label>
+                <input id="titre" type="text" maxlength="40" placeholder="<?= $inscription_contenu[4];?>" name="titre" required>
 
                 <!--Saisir l address -->
-                <input type="text" maxlength="40" placeholder="Adresse" name="address" required>
+                <label class="labelClass" for="adresse"><?= $inscription_contenu[5];?> :</label>
+                <input id="adresse" type="text" maxlength="40" placeholder="<?= $inscription_contenu[5];?>" name="address" required>
 
                 <!--Saisir le Email--> 
-                <input type="text" maxlength="60" placeholder="Email" name="email" required>
+                 <label class="labelClass" for="email"><?= $inscription_contenu[6];?> :</label>
+                 <input id="email" type="text" maxlength="60" placeholder="<?= $inscription_contenu[6];?>" name="email" required>
 
 
                 <div style="padding: 8px 0;">
+                    <label class="labelClass" for="country"><?= $inscription_contenu[7];?> :</label>
                     <?php include(UTIL_PATH . "/countries.php"); ?>
                 </div>
 
 
                 <div style="padding: 8px 0;">
+                    <label class="labelClass" for="gender"><?= $inscription_contenu[8];?> :</label>
                     <select id="gender" class="form-control selectForm" name="gender" required>
                         <option value="" selected="">Sexe</option> 
                         <option value="1">Male</option> 
@@ -69,6 +78,7 @@
                 </div>
 
                 <div style="padding: 8px 0;">
+                    <label class="labelClass" for="typePersoone"><?= $inscription_contenu[9];?> :</label>
                     <select id="typePersoone" class="form-control" name="type" required>
                         <option value="" selected="">Fonction</option> 
                         <option value="2" >Enseignant-chercheur</option> 
@@ -78,7 +88,7 @@
                 </div>
                 <br/>
                 <!--valider l'enregistrement-->
-                <button type="submit">Sauvegarder</button>
+                <button type="submit">$inscription_contenu[10]</button>
             </form>
         </div>
     </div>

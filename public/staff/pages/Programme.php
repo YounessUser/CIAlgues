@@ -5,14 +5,13 @@
 
 <div class="section">
     <div class="pageContent">
-        <h1 class="presentationTitle"><b>APPEL À COMMUNICATIONS :</b></h1>
+        <h1 class="presentationTitle"><b><?= $programme_title; ?> :</b></h1>
         <ul class="feature-icons">
-            <li class="fa-chevron-right sizeText">Le programme comprend des conférences plénières (45 min)</li>
-            <li class="fa-chevron-right sizeText">Des lectures (30 min)</li>
-            <li class="fa-chevron-right sizeText">Des communications orales (15 min)</li>
-            <li class="fa-chevron-right sizeText">Des présentations par affiches
-                <h6 style="font-size: 14px;font-weight: bold;">Les langues officielles du symposium sont l'anglais et le français</h6>
-            </li>
+            <?php foreach ($programme_contenu as $contenu): ?>
+
+                <li class="fa-chevron-right sizeText"><?= $contenu; ?></li>
+            <?php endforeach; ?>
+          
         </ul>
     </div>
 </div>
