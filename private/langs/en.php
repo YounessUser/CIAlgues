@@ -76,7 +76,7 @@ $frais_contenu=[
     "Before",
     "After",
     "Teacher-researchers:",
-    "students :",
+    "PhD student :",
     "Accompanying :",
     "N.B : The prize includes the various documents relating to this congress, access to the different sessions, coffee breaks and lunches."
 ];

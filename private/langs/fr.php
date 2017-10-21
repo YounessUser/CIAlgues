@@ -80,7 +80,7 @@ $frais_contenu=[
     "Avant le",
     "aprés le",
     "Enseignant-chercheurs :",
-    "Etudiants :",
+    "Doctorant :",
     "Accompagnateurs :",
     "N.B : Le prix comprend les divers documents relatifs à ce congrès, l'accès aux différentes sessions, les pauses café et déjeuners."
 ];

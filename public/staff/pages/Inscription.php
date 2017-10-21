@@ -88,7 +88,7 @@
                 </div>
                 <br/>
                 <!--valider l'enregistrement-->
-                <button type="submit">$inscription_contenu[10]</button>
+                <button type="submit"><?=$inscription_contenu[10];?></button>
             </form>
         </div>
     </div>
