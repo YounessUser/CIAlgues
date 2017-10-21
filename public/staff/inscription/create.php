@@ -46,7 +46,8 @@ if (is_post_request()) {
 
 
 } else {
-  redirect_to(url_for('/staff/inscription/message.php'));
+  $errors[] = "SVP ! Remplissez les vides ! ";
+  redirect_to(url_for('/staff/pages/Inscription.php'));
 }
 
 ?>

@@ -11,6 +11,7 @@
         <!--<a class="back-link" href="<?php // echo url_for('/staff/commite/index.php'); ?>">&laquo; Revenir vers la list</a>-->
         <h1></h1>
         <div style="padding-top: 2%;">
+            <?php echo display_errors($errors); ?>
             <form action="<?php echo url_for('/staff/inscription/create.php'); ?>" method="post" style="width: 100%;">
 
 
@@ -25,7 +26,7 @@
                 <div style="padding:8px 0;">
                     <label class="labelClass" for="commu"><?= $inscription_contenu[2];?></label>
                     <select id="commu" class="form-control selectForm" name="commu" required>
-                        <option value="Vide" selected="true">-- SELECT --</option> 
+                        <option value="" selected="">Communication</option> 
                         <option value="Orale" >Orale</option> 
                         <option value="Affiche">Affiche</option>
 
@@ -36,7 +37,7 @@
                 <div style="padding:8px 0;">
                     <label class="labelClass" for="theme"><?= $inscription_contenu[3];?></label>
                     <select id="theme" class="form-control selectForm" name="theme" required>
-                        <option value="0" selected="true">-- SELECT --</option> 
+                        <option value="" selected="">Thème</option> 
                         <option value="1" >Algues et biodiversité</option> 
                         <option value="2">Biotechnologies algales</option>
                         <option value="3">Algues et agriculture</option>
@@ -69,7 +70,7 @@
                 <div style="padding: 8px 0;">
                     <label class="labelClass" for="gender"><?= $inscription_contenu[8];?> :</label>
                     <select id="gender" class="form-control selectForm" name="gender" required>
-                        <option value="1" selected="ture">-- SELECT --</option> 
+                        <option value="" selected="">Sexe</option> 
                         <option value="1">Male</option> 
                         <option value="2">Female</option>
 
@@ -79,7 +80,7 @@
                 <div style="padding: 8px 0;">
                     <label class="labelClass" for="typePersoone"><?= $inscription_contenu[9];?> :</label>
                     <select id="typePersoone" class="form-control" name="type" required>
-                        <option value="0" selected="true">-- SELECT --</option> 
+                        <option value="" selected="">Fonction</option> 
                         <option value="2" >Enseignant-chercheur</option> 
                         <option value="3" >Doctorant</option>
                         <option value="1" >Accompagnateur </option>

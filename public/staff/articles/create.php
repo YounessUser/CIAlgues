@@ -89,6 +89,7 @@ if (is_post_request()) {
     #$ar_text = filter_input(INPUT_POST, 'ar_text'); // it doesn't work
     //$article['visible'] = $_POST['visible'] ?? '';
 
+    $article['author'] = $_SESSION['username'] ?? '';
     $result = insert_subject($article);
     $new_id = mysqli_insert_id($db);
     //redirect_to(url_for('/staff/articles/show.php?id=' . $new_id));
