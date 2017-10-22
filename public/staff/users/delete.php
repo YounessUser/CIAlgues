@@ -3,6 +3,9 @@
 require_once('../../../private/initialize.php');
 require_login(); 
 
+if(count_users() <= '2'){
+    redirect_to(url_for('/staff/users/index.php'));
+}
 
 if(!isset($_GET['id'])) {
   redirect_to(url_for('/staff/users/index.php'));

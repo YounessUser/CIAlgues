@@ -14,6 +14,17 @@ function find_all_users() {
     $result = mysqli_query($db, $sql);
     return $result;
   }
+  
+function count_users() {
+    global $db;
+
+    $sql = "SELECT COUNT(username) FROM user ";
+    $result = mysqli_query($db, $sql);
+    $row = mysqli_fetch_row($result);
+    mysqli_free_result($result);
+    $count = $row[0];
+    return $count;
+  }
 
 function find_admin_by_username($username) {
     global $db;
@@ -113,6 +124,7 @@ function insert_user($user) {
 function delete_user($id) {
     global $db;
 
+    if(count_users() > '2'){
     $sql = "DELETE FROM user ";
     $sql .= "WHERE id='" . db_escape($db,$id ). "' ";
     $sql .= "LIMIT 1";
@@ -126,6 +138,7 @@ function delete_user($id) {
       echo mysqli_error($db);
       db_disconnect($db);
       exit;
+    }
     }
   }
 
