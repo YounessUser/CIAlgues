@@ -32,7 +32,7 @@ CREATE TABLE `article` (
   `id` int(11) NOT NULL,
   `ar_title` varchar(255) DEFAULT NULL,
   `ar_text` text,
-  `author` int(11) DEFAULT NULL,
+  `author` varchar(25) DEFAULT NULL,
   `ar_path` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
