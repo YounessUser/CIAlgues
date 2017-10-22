@@ -34,7 +34,11 @@ and open the template in the editor.
         <th style="padding: 1%;" >Nom</th>
         <th style="padding: 1%;" >Question</th>
         <th style="padding: 1%;">Reponse</th>
-  	    <th style="padding: 1%;">&nbsp;</th>
+            <?php 
+            if(count_users() > '2'){
+  	    echo "<th style=\"padding: 1%;\">&nbsp;</th>";
+            }
+            ?>
   	    <th style="padding: 1%;">&nbsp;</th>
         <th>&nbsp;</th>
   	  </tr>
@@ -46,8 +50,12 @@ and open the template in the editor.
     	    <td style="padding: 1%;"><?php  echo h($user['resp']); ?></td>
           <!--<td style="padding: 1%;"><a class="action" href="<?php # echo url_for('/staff/subjects/show.php?id=' . h(u($user['id']))); ?>">Apparaitre</a></td>-->
           <td style="padding: 1%;"><a class="action" href="<?php echo url_for('/staff/users/edit.php?id=' . h(u($user['id']))); ?>">Modifier</a></td>
-          <td style="padding: 1%;"><a class="action" href="<?php echo url_for('/staff/users/delete.php?id=' . h(u($user['id']))); ?>">Supprimer</a></td>
-    	  </tr>
+         <?php
+         if(count_users() > '2' ){
+          echo "<td style=\"padding: 1%;\"><a class=\"action\" href=". url_for('/staff/users/delete.php?id=' . h(u($user['id']))).">Supprimer</a></td>";
+         }
+    	  ?>
+              </tr>
       <?php } ?>
   	</table>
    

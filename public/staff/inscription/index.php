@@ -39,6 +39,8 @@ and open the template in the editor.
         <th style="padding: 1%;">Théme</th>
         <th style="padding: 1%;">Titre</th>
         <th style="padding: 1%;">Sexe</th>
+        <th style="padding: 1%;">Pays</th>
+        <th style="padding: 1%;">Price</th>
   	    <th style="padding: 1%;">&nbsp;</th>
   	    <th style="padding: 1%;">&nbsp;</th>
         <!--<th>&nbsp;</th>-->
@@ -54,6 +56,8 @@ and open the template in the editor.
           <td style="padding: 1%;"><?php  echo $inscription['theme'] == 1 ? 'Algues et biodiversité'  : ( 2 ? 'Biotechnologies algales' :( 3 ? 'Algues et agriculture' : ( 4 ? 'Algues et environnement' : ( 5 ? 'Algues et industries' : ( 6 ? 'Algocarburants' : ''))))); ?></td>
           <td style="padding: 1%;"><?php  echo h($inscription['titre']); ?></td>
           <td style="padding: 1%;"><?php  echo $inscription['gender'] == 1 ? 'Male'  : ( 2 ? 'Female' : ''); ?></td>
+          <td style="padding: 1%;"><?php  echo h($inscription['country']); ?></td>
+          <td style="padding: 1%;"><?php  echo h($inscription['price']); ?></td>
           <!--<td style="padding: 1%;"><a class="action" href="<?php # echo url_for('/staff/subjects/show.php?id=' . h(u($subject['id']))); ?>">Apparaitre</a></td>-->
           <!--<td style="padding: 1%;"><a class="action" href="<?php // echo url_for('/staff/subjects/edit.php?id=' . h(u($subject['id']))); ?>">Modifier</a></td>-->
           <!--<td style="padding: 1%;"><a class="action" href="">Supprimer</a></td>-->
