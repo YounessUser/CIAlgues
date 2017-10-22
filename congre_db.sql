@@ -43,7 +43,8 @@ CREATE TABLE `article` (
 INSERT INTO `article` (`id`, `ar_title`, `ar_text`, `author`, `ar_path`) VALUES
 (8, 'Hello Test', '<h1>This is a Test</h1>hDJKLJKLSDJ AJKDLASDJ KLADJKLASDJK AL jkdsajkl dsaklas dajlkasjdaksldj&nbsp;<br>', NULL, NULL),
 (9, 'Hello Test dshjajhja hdaj Title Edited', '<h1>hhgewhjs this Text is Edited by Uns</h1>hjksdha hadj hadhkajd hakdh kashdkas&nbsp;<br>', NULL, NULL),
-(11, 'Hello Test ArrayTest', '<h1><span class=\"wysiwyg-color-red\">Would ArrayTestNull work ?</span><br></h1>I am not sure !! but probably yes !<span class=\"wysiwyg-color-red\"><br></span>', NULL, NULL);
+(11, 'Hello Test ArrayTest', '<h1><span class=\"wysiwyg-color-red\">Would ArrayTestNull work ?</span><br></h1>I am not sure !! but probably yes !<span class=\"wysiwyg-color-red\"><br></span>', NULL, NULL),
+(65, 'HEBERGEMENT', '<h1><span class="wysiwyg-color-red"><b>EN COURS DE LA CONSTRUCTION ...</b></span></h1>', NULL, NULL);
 
 -- --------------------------------------------------------
 
