@@ -1800,9 +1800,9 @@ button.close {
 }
 
 .agileits-social {
-   
 
-     line-height: 28px;
+
+    line-height: 28px;
     float: right;
     margin: 0 .8em;
 }
@@ -1815,8 +1815,8 @@ button.close {
 .agileits-social ul li {
     background-color: rgba(0,0,0,0.5);
     display: inline-block;
-     border-left: 1px solid #fff;
-     border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .agileits-social ul li a {
@@ -2283,7 +2283,7 @@ button.close {
         top: 20% !important;
         left: 10% !important;
         width: 80% !important;
-       
+
     }
     .services-grid-left {
         width: 100%!important;
@@ -2410,12 +2410,12 @@ button.close {
     .navbar-nav>li>a {
         width: 25%;
     }
-    
+
     .txtAcuel {
         top: 15% !important;
         left: 5% !important;
         width: 90% !important;
-       
+
     }
 }
 
@@ -2609,7 +2609,7 @@ button.close {
         top: 5% !important;
         left: 5% !important;
         width: 90% !important;
-       
+
     }
 }
 
@@ -2679,8 +2679,8 @@ button.close {
     .dateImportant{
         font-size: 1em;
     }
-   
-  
+
+
     .navbar-nav>li>a {
         width: 34%;
     }
@@ -2694,15 +2694,15 @@ button.close {
         top: 10px !important;
         left: 0 !important;
         width: 100% !important;
-       
+
     }
     .footer-w3layouts{
         height: 50px;
         font-size: 8px;
     }
     .agile-copy {
-    float: none;
-}
+        float: none;
+    }
 }
 
 @media screen and (max-width: 384px) {
@@ -2856,7 +2856,7 @@ button.close {
 .logoLeft{
     width: 20%;
     margin-right: 20%;
-    
+
 }
 
 .logoCIAlgues{
@@ -2866,7 +2866,7 @@ button.close {
 .logoRight{
     width: 30%;
 
-     background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
 }
 .logos{
     width: 100%;
@@ -2975,7 +2975,7 @@ button.close {
 .bgGreen {
     background-color: #4CBB17;
     border-radius: 50%;
-   padding:10px;
+    padding:10px;
     color: white;
 }
 
