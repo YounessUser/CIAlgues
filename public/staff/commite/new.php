@@ -1,5 +1,6 @@
 <?php
 require_once('../../../private/initialize.php');
+ require_login();
 
 #$commite_set = find_all_commite();
 #mysqli_free_result($commite_set);

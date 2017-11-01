@@ -3,7 +3,10 @@
 <?php $title = " Ajouter un article"?>
 
 
-<?php require_once('../../../private/initialize.php');?> 
+<?php require_once('../../../private/initialize.php');
+ require_login();
+
+?> 
 
 <!--
 To change this license header, choose License Headers in Project Properties.

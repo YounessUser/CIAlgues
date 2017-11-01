@@ -3,6 +3,7 @@
 require_once('../../../private/initialize.php');
 
 $errors = [];
+ require_login();
 
 
 

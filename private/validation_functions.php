@@ -66,6 +66,21 @@
   function has_inclusion_of($value, $set) {
   	return in_array($value, $set);
   }
+  
+  function string_has_sqlinclusion_of($string){
+      $set = array('SELECT','DROP','%3B','FROM','%2A','DELETE','TABLE','CREATE','UPDATE','COUNT','SET','ADD');
+      $aray = explode("+", $string);
+      foreach($aray as $key => $value){
+          if(has_inclusion_of($value, $set)){
+              return TRUE;
+          }
+      }
+      
+      return FALSE;
+  }
+  
+  $sql_array_command = array('SELECT','DROP',';','FROM','*','DELETE','TABLE','CREATE','UPDATE','COUNT','SET','ADD');
+
 
   // has_exclusion_of( 5, [1,3,5,7,9] )
   // * validate exclusion from a set

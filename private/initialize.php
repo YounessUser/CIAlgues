@@ -60,5 +60,4 @@ require_once $langUrl;
 
 $db = db_connect();
 
-$errors = [];
 ?>

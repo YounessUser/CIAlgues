@@ -5,6 +5,7 @@
 $id = isset($_GET['id']) ? $_GET['id'] : '1'; 
 
 $commite = find_commite_by_id($id);
+ require_login();
 
 ?>
 
