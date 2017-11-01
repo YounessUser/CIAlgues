@@ -20,6 +20,10 @@ if (is_post_request()) {
     if (is_blank($password)) {
         $errors[] = "Password cannot be blank.";
     }
+    
+    if(string_has_sqlinclusion_of(h(u($username)))){
+        $errors[] = "Username ou mot de passe sont incorrect!";
+    }
 
     // if there were no errors, try to login
     if (empty($errors)) {
