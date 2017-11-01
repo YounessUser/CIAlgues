@@ -20,16 +20,21 @@ if (is_post_request()) {
             $email = $_POST['email'] != NULL ? strval($_POST['email']) : '';
             $type = $_POST['type'] != NULL ? intval($_POST['type']) : ''; 
             $gender = $_POST['gender'] != NULL ? intval($_POST['gender']) : ''; 
-            $inscription['firstname'] = $firstname;
-            $inscription['lastname'] = $lastname;
+            $inscription['firstname'] = h(u($firstname));
+            $inscription['lastname'] = h(u($lastname));
+            if(has_valid_email_format($email)){
             $inscription['email'] = $email;
-            $inscription['gender'] = $gender;
-            $inscription['address'] = $address;
-            $inscription['type'] = $type;
-            $inscription['price'] = inscription_price($type);
-            $inscription['titre'] = $titre;
-            $inscription['theme'] = $theme;
-            $inscription['country'] = $country;
+            }else{
+                $errors[] ='Email incorrect!';
+                redirect_to(url_for('/staff/pages/Inscription.php'));
+            }
+            $inscription['gender'] = h(u($gender));
+            $inscription['address'] = h(u($address));
+            $inscription['type'] = h(u($type));
+            $inscription['price'] = inscription_price(h(u($type)));
+            $inscription['titre'] = h(u($titre));
+            $inscription['theme'] = h(u($theme));
+            $inscription['country'] = h(u($country));
         }
     } catch (Exception $ex) {
         echo "<h1> {$ex} </h1>";
@@ -40,10 +45,21 @@ if (is_post_request()) {
   
   //$article['visible'] = $_POST['visible'] ?? '';
 
+    $boolean_sql = FALSE;
+  foreach($inscription as $key => $value){
+      if(string_has_sqlinclusion_of($value)){
+          $boolean_sql = TRUE;
+      }
+  }
+  if(!$boolean_sql){
   $result = insert_inscription($inscription);
   $new_id = mysqli_insert_id($db);
   #redirect_to(url_for('/staff/inscription/show.php?id=' . $new_id));
   redirect_to(url_for('/staff/inscription/message.php'));
+  }else{
+    redirect_to(url_for('/staff/pages/Inscription.php'));
+    $errors[]='Fill in the Blank Again with correct answers form!';
+  }
 
 
 } else {

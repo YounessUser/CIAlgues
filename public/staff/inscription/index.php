@@ -22,7 +22,7 @@ and open the template in the editor.
 <div class="section" style="padding-top: 5%;">
         <div class="pageContent">
 
-            <h1 class="presentationTitle"><b> Gestion des Inscriptions</b></h1>
+            <h1 class="presentationTitle"><b>Gestion des Inscriptions</b></h1>
             <div class="container">
 <button type="button" style="background-color: blue; color: white;"><a class="action" style=" color: white;" href="<?php echo url_for('/staff/pages/Inscription.php'); ?>">Cree un nouveau inscription</a>
 </button>

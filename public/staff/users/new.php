@@ -1,5 +1,6 @@
 <?php
 require_once('../../../private/initialize.php');
+ require_login();
 
 #$user_set = find_all_user();
 #mysqli_free_result($user_set);

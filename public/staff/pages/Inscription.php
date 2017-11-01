@@ -1,7 +1,9 @@
 <?php require_once('../../../private/initialize.php'); ?> 
 
 
-<?php include(SHARED_PATH . '/Header.php'); ?>
+<?php include(SHARED_PATH . '/Header.php');
+$errors = [];
+?>
 
 <div class="section">
     <div class="pageContent">

@@ -102,9 +102,9 @@ $langue = (isset($_GET['lang'])) ? $_GET['lang'] : 'Fr';
                                     <li ><a href="<?php echo url_for("/staff/pages/Contact.php?lang=" . $langue); ?>" ><i class="fa fa-envelope"></i> Contact</a></li>
                                 </ul>
                                 <div class="w3_agileits_social">
-                                    <div class="social-icon">
+                                    <!--<div class="social-icon">-->
                                         <a href="<?php echo url_for("/staff/connection/login.php"); ?>" class=" "><i class="fa fa-sign-in"></i> Se connecter</a>
-                                    </div>
+                                    <!--</div>-->
 
                                 </div>
 
