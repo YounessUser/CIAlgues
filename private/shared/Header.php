@@ -39,6 +39,7 @@ $langue = (isset($_GET['lang'])) ? $_GET['lang'] : 'Fr';
         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
         <!--//web font-->
 
+        <link href="<?php echo url_for('stylesheets/css/tableexport.min.css'); ?>" rel="stylesheet">
     </head>
 
     <!-- Body -->

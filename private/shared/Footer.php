@@ -33,18 +33,20 @@
  <!-- Default-JavaScript-File -->
         <script type="text/javascript" src="<?php echo url_for('stylesheets/js/jquery-2.1.4.min.js');?>"></script>
         <script type="text/javascript" src="<?php echo url_for('stylesheets/js/bootstrap.js');?>"></script>
+        <script type="text/javascript" src="<?php echo url_for('stylesheets/js/FileSaver.min.js');?>"></script>
+        <script type="text/javascript" src="<?php echo url_for('stylesheets/js/tableexport.min.js');?>"></script>
         <!-- //Default-JavaScript-File -->
 
         <!-- gallery plugin -->
-        <script type="text/javascript" src="<?php echo url_for('stylesheets/js/simple-lightbox.min.js');?>"></script>
-        <script>
+        <!--<script type="text/javascript" src="<?php // echo url_for('stylesheets/js/simple-lightbox.min.js');?>"></script>-->
+<!--        <script>
             $(function () {
                 var gallery = $('.w3gallery-grids a').simpleLightbox({
                     navText: ['&lsaquo;', '&rsaquo;']
                 });
             });
 
-        </script>
+        </script>-->
         <!-- //gallery plugin -->
 
         <!-- ji slider -->
@@ -60,7 +62,7 @@
             })
 
         </script>
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-36251023-1']);
             _gaq.push(['_setDomainName', 'jqueryscript.net']);
@@ -75,14 +77,14 @@
                 s.parentNode.insertBefore(ga, s);
             })();
 
-        </script>
+        </script>-->
         <!-- //ji slider -->
         <!-- //banner js script -->
 
         <!-- for-Testimonials -->
-        <script defer src="<?php echo url_for('stylesheets/js/jquery.flexslider.js');?>"></script>
+        <!--<script defer src="<?php // echo url_for('stylesheets/js/jquery.flexslider.js');?>"></script>-->
         <!--Start-slider-script-->
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             $(window).load(function () {
                 $('.flexslider').flexslider({
                     animation: "slide",
@@ -92,19 +94,19 @@
                 });
             });
 
-        </script>
+        </script>-->
         <!--End-slider-script-->
         <!-- //for-Testimonials -->
 
-        <script type="text/javascript" src="<?php echo url_for('stylesheets/js/numscroller-1.0.js');?>"></script>
+        <!--<script type="text/javascript" src="<?php // echo url_for('stylesheets/js/numscroller-1.0.js');?>"></script>-->
         <!-- numscroller js file -->
 
         <!-- smooth scrolling -->
-        <script src="<?php echo url_for('stylesheets/js/SmoothScroll.min.js');?>"></script>
-        <script type="text/javascript" src="<?php echo url_for('stylesheets/js/move-top.js');?>"></script>
-        <script type="text/javascript" src="<?php echo url_for('stylesheets/js/easing.js');?>"></script>
+        <!--<script src="<?php // echo url_for('stylesheets/js/SmoothScroll.min.js');?>"></script>-->
+        <!--<script type="text/javascript" src="<?php // echo url_for('stylesheets/js/move-top.js');?>"></script>-->
+        <!--<script type="text/javascript" src="<?php // echo url_for('stylesheets/js/easing.js');?>"></script>-->
         <!-- here stars scrolling icon -->
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             $(document).ready(function () {
                 /*
                  var defaults = {
@@ -121,12 +123,12 @@
 
             });
 
-        </script>
+        </script>-->
         <!-- //here ends scrolling icon -->
         <!-- smooth scrolling -->
 
         <!-- scrolling script -->
-        <script type="text/javascript">
+<!--        <script type="text/javascript">
             jQuery(document).ready(function ($) {
                 $(".scroll").click(function (event) {
                     event.preventDefault();
@@ -136,8 +138,9 @@
                 });
             });
 
-        </script>
+        </script>-->
         <!-- //scrolling script -->
 
-        <script src="<?php echo url_for('stylesheets/js/jquery.vide.min.js');?>"></script>
+<!--        <script src="<?php // echo url_for('stylesheets/js/jquery.vide.min.js');?>"></script>-->
         <!-- video js file -->
+

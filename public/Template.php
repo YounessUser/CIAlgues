@@ -5,24 +5,30 @@
 <!-- banner -->
 <div class="banner-silder">
     <div id="JiSlider" class="jislider">
-        <div class="txtAcuel">
+        <div class="txtAcuel ">
             <!--<div class="container">-->
 
-            <div class="agileits-banner-info">
+            <div class="agileits-banner-info ">
 <!--                <h3><span class="bgGreen">CIAlgues-2018</span></h3>-->
-                <img src="stylesheets/img/logoCIAlgues.png" class="logoCIAlgues" alt="CIAlgues" >
-                <p><?= $accueil_contenu[0];?>
+                <div class="col-sm-3">
+                    <img src="stylesheets/img/logoCIAlgues.png" class="logoCIAlgues" alt="CIAlgues" >
+                </div>
+                <div class="col-sm-7">
+                    
+                    <p><?= $accueil_contenu[0];?>
 
-                    <br>
-                    <span class="dateImportant"><?= $accueil_contenu[1];?></span>
+                        <br>
+                        <span class="dateImportant"><?= $accueil_contenu[1];?></span>
 
 
-                </p>
-                <div class="logos">
-                    <img src="stylesheets/img/FSTGLogo.png" class="sponsseurLogo logoLeft" alt="FSTG"  height="66" >
-                    <img src="stylesheets/img/UCALogo.png" class="sponsseurLogo logoRight" alt="UCA" >
-                </div>   
+                    </p>
+                </div>
+                <div class="logos col-sm-2">
+                    <img src="stylesheets/img/newLogoFSTG.png" class=" logoLeft" alt="FSTG"   >
+                    <!--<img src="stylesheets/img/UCALogo.png" class="sponsseurLogo logoRight" alt="UCA" >-->
+                </div> 
             </div>
+                  
 
             <!--                </div>-->
         </div>
