@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php $title = " Ajouter un article"?>
+<?php $title = "Gestion des Inscriptions"?>
 
 
 <?php require_once('../../../private/initialize.php');?> 
@@ -14,6 +14,7 @@ and open the template in the editor.
 <?php
 
   $inscription_set = find_all_inscription();
+  require_login();
 
 ?>
 
