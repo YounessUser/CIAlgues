@@ -10,25 +10,28 @@
 
             <div class="agileits-banner-info ">
 <!--                <h3><span class="bgGreen">CIAlgues-2018</span></h3>-->
-                <div class="col-sm-3">
+                <!--                <div class="col-sm-3">
+                                    <img src="stylesheets/img/logoCIAlgues.png" class="logoCIAlgues" alt="CIAlgues" >
+                                </div>-->
+                <div class=" col-sm-8" style="line-height: 150px">
                     <img src="stylesheets/img/logoCIAlgues.png" class="logoCIAlgues" alt="CIAlgues" >
-                </div>
-                <div class="col-sm-7">
-                    
-                    <p><?= $accueil_contenu[0];?>
+                    <p><?= $accueil_contenu[0]; ?>
 
                         <br>
-                        <span class="dateImportant"><?= $accueil_contenu[1];?></span>
+                        <span class="dateImportant"><?= $accueil_contenu[1]; ?></span>
 
 
                     </p>
                 </div>
-                <div class="logos col-sm-2">
+                <div class="col-sm-1">
+                    <hr  style="width: 1px;height: 260px;background-color: #fff;">
+                </div>
+                <div class="logos col-sm-3">
                     <img src="stylesheets/img/newLogoFSTG.png" class=" logoLeft" alt="FSTG"   >
                     <!--<img src="stylesheets/img/UCALogo.png" class="sponsseurLogo logoRight" alt="UCA" >-->
                 </div> 
             </div>
-                  
+
 
             <!--                </div>-->
         </div>
