@@ -52,6 +52,9 @@ if (is_post_request()) {
       }
   }
   if(!$boolean_sql){
+    foreach($inscription as $key => $value){
+    $inscription[$key] = str_replace("+", " ", $value);
+  }  
   $result = insert_inscription($inscription);
   $new_id = mysqli_insert_id($db);
   #redirect_to(url_for('/staff/inscription/show.php?id=' . $new_id));
