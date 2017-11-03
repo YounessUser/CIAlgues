@@ -51,7 +51,7 @@ and open the template in the editor.
        
         <th style="padding: 1%;">Titre</th>
         <th style="padding: 1%;">Auteur</th>
-  	    <th>&nbsp;</th>
+  	   <!-- <th>&nbsp;</th> -->
   	    <th>&nbsp;</th>
         <th>&nbsp;</th>
         <th>&nbsp;</th>
@@ -62,7 +62,7 @@ and open the template in the editor.
           <td style="padding: 1%;"><?php echo h($subject['ar_title']); ?></td>
           <td style="padding: 1%;"><?php echo $subject['author']; ?></td>
     	    <!--<td><?php # echo h($subject['menu_name']); ?></td>-->
-          <td style="padding: 1%;"><a class="action" href="<?php  echo du($subject['ar_path']); ?>">Telecharger</a></td>
+          <!-- <td style="padding: 1%;"><a class="action" href="<?php  echo du($subject['ar_path']); ?>">Telecharger</a></td>-->
           <td style="padding: 1%;"><a class="action" href="<?php echo url_for('/staff/articles/edit.php?id=' . h(u($subject['id']))); ?>">Modifier</a></td>
           <td style="padding: 1%;"><a class="action" href="<?php echo url_for('/staff/articles/delete.php?id=' . h(u($subject['id']))); ?>">Supprimer</a></td>
     	  </tr>
